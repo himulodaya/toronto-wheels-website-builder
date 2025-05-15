@@ -2,6 +2,7 @@
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
+import BookingSection from '@/components/BookingSection';
 import CourseCard from '@/components/CourseCard';
 import ProcessStep from '@/components/ProcessStep';
 import PricingCard from '@/components/PricingCard';
@@ -17,6 +18,9 @@ const Index = () => {
       
       <main className="flex-grow">
         <HeroSection />
+        
+        {/* Added Booking Section right after the hero section */}
+        <BookingSection />
         
         {/* Features section */}
         <section className="section-padding bg-gray-50">
