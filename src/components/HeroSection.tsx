@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 
@@ -8,9 +7,9 @@ const HeroSection = () => {
       {/* Background image */}
       <div 
         className="absolute inset-0 w-full h-full bg-cover bg-center z-0" 
-        style={{ backgroundImage: "url('/lovable-uploads/30e212be-8f9d-443c-9783-1ee9eea63cc4.png')" }}
+        style={{ backgroundImage: "url('/lovable-uploads/cf772956-32de-4808-a75e-a31d685ca498.png')" }}
       >
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/50"></div>
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
