@@ -4,14 +4,24 @@ import { Button } from '@/components/ui/button';
 const HeroSection = () => {
   return (
     <section id="home" className="relative overflow-hidden h-screen">
-      {/* Background image */}
+      {/* Background image with responsive positioning */}
       <div 
-        className="absolute inset-0 w-full h-full bg-cover bg-center md:bg-left lg:bg-left" 
-        style={{ backgroundImage: "url('/lovable-uploads/cf772956-32de-4808-a75e-a31d685ca498.png')" }}
+        className="absolute inset-0 w-full h-full bg-cover" 
+        style={{ 
+          backgroundImage: "url('/lovable-uploads/cf772956-32de-4808-a75e-a31d685ca498.png')",
+          backgroundPosition: "30% center"  // Position to show the lady centered on mobile
+        }}
       >
+        {/* Custom media query for desktop positioning */}
+        <style jsx>{`
+          @media (min-width: 768px) {
+            div {
+              background-position: left center !important;
+            }
+          }
+        `}</style>
         <div className="absolute inset-0 bg-black/50"></div>
       </div>
-
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex items-center justify-center h-full">
         <div className="text-center">
           <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6">
